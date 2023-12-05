@@ -203,8 +203,10 @@ template {
     --yellow: #FDD601;
     --opensans: 'Open Sans', sans-serif;
     --lato: 'Lato', sans-serif;
+    --heading-size: 20px/25px;
+    --heading-lheight: 32px;
     --body-size: 16px/20px;
-    --body-lheight: 22px;
+    --body-lheight: 22px;    
 }
 /* CUSTOM CSS */
 body {
@@ -213,13 +215,49 @@ body {
 #main-header {
     position: relative;
     background: transparent image-set(
-        url("assets/img/BTO-LP-BACKGROUND_01@2x.png") 2x,
-        url("assets/img/BTO-LP-BACKGROUND_01.png") 1x) 0% 0% no-repeat padding-box;
+        url("../img/BTO-LP-BACKGROUND_01@2x.png") 2x,
+        url("../img/BTO-LP-BACKGROUND_01.png") 1x) 0% 0% no-repeat padding-box;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 0;
     padding-top: 32.65625%; /* height / width * 100 */
+}
+.no-margin {
+    margin: 0;
+}
+ .white-bg {
+    background-color: #FFF;
+ }
+ .lato {
+    font-family: var(--lato);
+ }
+ .bold {
+    font-weight: bold;
+ }
+ .underline {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+ }
+.text-center {
+    text-align: center;
+}
+.white-bg {
+    background: #FFF;
+    border: 10px solid #EDEDED;
+}
+.p-20 {
+    padding: 20px;
+}
+.z-5 {
+    z-index: 5;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
 }
 .header-container {
     position: absolute;
@@ -246,4 +284,16 @@ body {
     top: 10px;
     right: 0;
     transform: translateX(80%);
+}
+.medium-container {
+    margin-top: 15px;
+    width: 800px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.opening-announcement {
+    font-family: var(--lato);
+    font-style: italic;
+    font-weight: 600;
+    line-height: var(--heading-lheight);
 }
