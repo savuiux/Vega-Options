@@ -439,7 +439,7 @@ section, header {
     position: absolute;
     top: -20%;
     left: -40%;
-    background-image: url('/assets/img/arrow.svg');
+    background-image: url('../img/arrow.svg');
     width: 297px;
     height: 297px;
 }
@@ -448,7 +448,7 @@ section, header {
     position: absolute;
     top: -20%;
     right: -40%;
-    background-image: url('/assets/img/arrow.svg');
+    background-image: url('../img/arrow.svg');
     transform: rotateY(180deg);
     width: 297px;
     height: 297px;
