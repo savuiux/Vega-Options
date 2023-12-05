@@ -251,6 +251,9 @@ body {
 .white {
     color: #FFF;
 }
+.black {
+    color: #000;
+}
 .lato {
     font-family: var(--lato);
 }
@@ -460,6 +463,12 @@ body {
 .hide-on-large {
     display: none;
 }
+.vega-logo,
+.person {
+    position: relative;
+    bottom: 50%;
+    transform: translateY(50%);
+}
 @media only screen and (max-width: 1187px) {
     h1 {
         font-size: 2em;
@@ -478,6 +487,14 @@ body {
     .header-container {
         width: 100%;
     }
+    .vega-logo, .person {
+        bottom: 0;
+        transform: none;
+    }
+    .person {
+        right: 0;
+        transform: translateX(-40%);
+    }
     .vega-logo {
         margin-top: 40px;
         margin-left: 35px;
@@ -487,7 +504,8 @@ body {
     }
     .person img {
         width: 50%;
-        right: -8rem;
+        top: 50%;
+        transform: translateY(-50%);
     }
     .hide-on-small {
         display: none;
