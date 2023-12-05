@@ -358,8 +358,6 @@ body {
 .medium-container {
     margin-top: 15px;
     width: 657px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 .opening-announcement {
     font-family: var(--lato);
