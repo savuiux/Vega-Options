@@ -215,6 +215,9 @@ template {
 body {
     background-color: var(--background);
 }
+section, header {
+    overflow: hidden;
+}
 #main-header {
     position: relative;
     background: transparent image-set(
@@ -302,6 +305,9 @@ body {
     display: flex;
     justify-content: center;
 }
+.overflow-visible {
+    overflow: visible;
+}
 .relative {
     position: relative;
 }
@@ -356,7 +362,8 @@ body {
 .person img {
     position: absolute;
     top: 10px;
-    right: -20rem;
+    right: 50%;
+    transform: translateX(150%);
 }
 .medium-container {
     position: relative;
@@ -493,19 +500,22 @@ body {
     }
     .person {
         right: 0;
-        transform: translateX(-40%);
+        transform: none
     }
     .vega-logo {
         margin-top: 40px;
         margin-left: 35px;
     }
     .vega-logo img {
+        position: absolute;
+        right: 55%;
         width: 30%;
     }
     .person img {
         width: 50%;
-        top: 50%;
-        transform: translateY(-50%);
+        top: -45px;
+        right: 0rem;
+        transform: none;
     }
     .hide-on-small {
         display: none;
@@ -532,7 +542,20 @@ body {
         line-height: 22px;
     }
     .sign-up {
-        width:  80%;
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .sign-up .input,
+    .newsletter-input {
+        width: 100%;
+        max-width: 305px;
+    }
+    .sign-up .btn,
+    .btn-newsletter {
+        width: 100%;
+        max-width: none;
     }
     .intro-text {
         font-size: 16px;
@@ -543,21 +566,15 @@ body {
     .newsletter-container:after {
         display: none;
     }
-    .newsletter-input,
-    .btn-newsletter {
-        width: 60%;
-        margin: 0 auto;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    }
     .newsletter-sign-up {
         display: block;
-    }
-    .btn-newsletter {
-        width: 72.9%;
+        overflow: hidden;
     }
     .static-black {
         height: 53px;
+    }
+    .newsletter-container h3 {
+        width: 80%;
+        margin: 0 auto;
     }
 }
