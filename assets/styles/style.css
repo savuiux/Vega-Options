@@ -213,8 +213,8 @@ body {
 #main-header {
     position: relative;
     background: transparent image-set(
-        url("/assets/img/BTO-LP-BACKGROUND_01@2x.png") 2x,
-        url("/assets/img/BTO-LP-BACKGROUND_01.png") 1x) 0% 0% no-repeat padding-box;
+        url("assets/img/BTO-LP-BACKGROUND_01@2x.png") 2x,
+        url("assets/img/BTO-LP-BACKGROUND_01.png") 1x) 0% 0% no-repeat padding-box;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
