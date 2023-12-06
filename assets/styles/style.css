@@ -578,4 +578,7 @@ section, header {
         width: 80%;
         margin: 0 auto;
     }
+    .medium-container {
+        margin-top: 0;
+    }
 }
