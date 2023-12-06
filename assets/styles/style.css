@@ -524,6 +524,9 @@ section, header {
     .hide-on-large {
         display: block;
     }
+    .overflow-visible {
+        overflow: hidden;
+    }
     .f-24 {
         font-size: 16px;
     }
